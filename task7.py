@@ -7,12 +7,15 @@
 # Examples:
 # 5 --> [0, 1, 1, 2, 3]
 # 7 --> [0, 1, 1, 2, 3, 5, 8]
-def func(testcases):
+def func(n):
     result = []
-    for i in range(0, testcases + 1):
-        if i 
-
-
+    a, b = 0, 1
+    for i in range(n):
+        result.append(a)
+        a, b = b, a + b
+    return result
 
 print(func(5))
-print(func(7))@
+print(func(7))
+
+# done
